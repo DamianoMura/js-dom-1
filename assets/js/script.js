@@ -10,12 +10,14 @@ button.addEventListener(`click`,function(){
     toggle.src=toggle.src.replace("white","yellow")
     //cambiamo accendi in spegni
     button.textContent=button.textContent.replace("accendi","spegni");
+    button.className=button.className.replace("danger","success");
     
   }
   else{//oppure cambiamo yellow con white
     toggle.src=toggle.src.replace("yellow","white")
     //cambiamo spegni in accendi
     button.textContent=button.textContent.replace("spegni","accendi");
+    button.className=button.className.replace("success","danger");
     
   }
 
